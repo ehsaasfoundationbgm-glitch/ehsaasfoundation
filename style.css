@@ -1,111 +1,84 @@
+/* General Styling */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f7fa;
-  color: #222;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
 }
 
+/* Header */
 header {
-  background: #fff;
-  border-bottom: 2px solid #e0e0e0;
-  display: flex;
-  align-items: center;
-  padding: 12px 5vw;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background: #006699;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-.logo {
-  height: 60px;
-  border-radius: 50%;
+header .logo {
+  height: 80px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+nav {
+  margin-top: 10px;
 }
 
 nav a {
-  text-decoration: none;
-  color: #1b6d50;
-  font-weight: 600;
-  transition: color 0.2s;
-}nav a:hover {
-  color: #0f422e;
-}
-
-main {
-  max-width: 900px;
-  margin: 32px auto;
-  padding: 0 16px;
-}
-
-section {
-  margin-bottom: 48px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(30, 80, 60, 0.06);
-  padding: 32px 24px;
-}
-
-h1, h2 {
-  color: #1b6d50;
-}
-
-.project-list {
-  padding-left: 20px;
-}
-.project-list li {
-  margin-bottom: 18px;
-}
-
-.team-list {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}.team-member {
-  text-align: center;
-}
-.team-member img {
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}.team-member h4 {
-  margin: 8px 0 4px;
-}
-
-.gallery-grid {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}.gallery-grid img {
-  width: 200px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #e0e0e0;
-}
-
-footer {
-  background: #1b6d50;
   color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Responsive */
-@media (max-width: 700px) {
-  header { flex-direction: column; gap: 12px; }
-  nav ul { flex-direction: column; gap: 16px; }
-  main { padding: 0 4vw; }
-  .team-list, .gallery-grid { flex-direction: column; gap: 20px; align-items: center; }
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section styling */
+section {
+  padding: 60px 20px;   /* yaha se sections ke beech proper gap aa jayega */
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  margin-bottom: 40px;  /* har section ke neeche white box + gap */
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #006699;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul, ol {
+  margin: 10px 0 20px 20px;
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 250px;   /* fixed size rakha */
+  height: auto;   /* proportional resize hoga */
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
 }
